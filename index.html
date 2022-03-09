@@ -1,0 +1,98 @@
+<style type="text/css">
+  /* parent button containter css */
+  h3,
+  h4 {
+    padding: 0;
+    margin: 0;
+  }
+  #calendar-container {
+    position: relative;
+    width: 200px;
+    height: 60px;
+  }
+
+  /* button css */
+  #calendar {
+    width: 200px;
+    height: 60px;
+  }
+
+  /* Calendar layout */
+  .calendar-layout {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: yellow;
+    width: 300px;
+    height: 186px;
+    display: none;
+  }
+  .calendar-layout-active {
+    display: block;
+  }
+
+  .calendar-table {
+    border: 1px solid red;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .calendar-table th {
+    border: 1px solid red;
+    text-align: center;
+    padding: 4px;
+  }
+  .calendar-table td {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: gray;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .calendar-table td:hover {
+    background-color: yellow;
+    color: red;
+  }
+  .calendar-header {
+    border-bottom: 1px solid red;
+    padding-left: 4px;
+    position: relative;
+  }
+  .calendar-header h3 {
+    display: inline-block;
+  }
+  .calendar-table .btn-disabled {
+    cursor: not-allowed;
+  }
+  .calendar-table .btn-disabled:hover {
+    background-color: gray;
+  }
+  .month-nav-container {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+  .month-nav {
+    width: 30px;
+    height: 20px;
+    margin: 1px 0px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2px;
+    font-family: monospace;
+    cursor: pointer;
+  }
+  .prev-month {
+    margin-right: 4px;
+  }
+  #current-selected-date {
+    background-color: red;
+    color: white;
+    padding-left: 4px;
+  }
+  .calendar-table .each-day-active {
+    background-color: yellow;
+    font-weight: bold;
+  }
+</style>
+<div id="app"></div>
